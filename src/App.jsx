@@ -9,6 +9,7 @@ function App() {
     <div className='fname'>HET</div>
     <div className='lname'>GAJERA</div>
     </div>
+    <div className='title'><a href=''>Software Developer</a></div>
     </div>
     </>
   )
