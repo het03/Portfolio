@@ -8,10 +8,11 @@
 body {
   margin: 0;
   padding: 0;
+  display: flex;
+  height: 100vh;
 }
 
 #root {
-  max-width: 100%;
   font-family: 'DrukWideBold', sans-serif;
 }
 
@@ -64,7 +65,10 @@ footer {
 }
 
 .footer-container {
+  width: 13.5vw;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .linkedin,
@@ -72,9 +76,6 @@ footer {
 .email {
   display: flex;
   color: white;
-}
-
-.email {
 }
 
 .email a {
@@ -99,28 +100,36 @@ a:focus {
   background-size: 0 0.1em, 100% 0.1em;
 }
 
-.nav{
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  height: 100vh;
+  margin-left: 40rem;
 }
 
-.nav-container{
-
+.nav-container {
+  display: flex;
+  flex-direction: column;
 }
 
-.nav-item {
+ul li {
   color: white;
+  list-style:none;
   font-size: 8rem;
   line-height: 6.5rem;
   transition: all 0.2s ease-in-out;
-  -webkit-user-select: none; /* Safari */
-  -ms-user-select: none; /* IE 10 and IE 11 */
-  user-select: none; /* Standard syntax */
-
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   &:nth-child(1) { transform: rotate(-4.5deg) translateX(0rem); }
   &:nth-child(2) { transform: rotate(1.4deg) translateX(8rem); }
   &:nth-child(3) { transform: rotate(-2.3deg) translateX(6rem); }
-  &:nth-child(4) { transform: rotate(2.9deg) translateX(1rem); }
+  &:nth-child(4) { transform: rotate(2.9deg) translateX(-2rem); }
 
   &:hover, &:focus, &:active {
-    font-size: 10rem;
+    font-size: 9rem;
   }
 }
+
