@@ -33,8 +33,10 @@ header {
 }
 
 .name-container {
+  color: white;
   margin-bottom: 1rem;
   transition: cubic-bezier(0, 0.52, 1, 1) 1s;
+  letter-spacing: -0.15rem;
 }
 
 .name-container:hover,.name-container:focus{
@@ -59,16 +61,20 @@ footer {
   position: fixed;
   bottom: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   box-sizing: border-box;
   cursor: default;
 }
 
 .footer-container {
-  width: 13.5vw;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 1rem;
+}
+
+span{
+  font-size: 0.7rem;
 }
 
 .linkedin,
@@ -106,7 +112,7 @@ a:focus {
   align-items: flex-end;
   justify-content: center;
   height: 100vh;
-  margin-left: 40rem;
+  width: 90vw;
 }
 
 .nav-container {
@@ -117,19 +123,19 @@ a:focus {
 ul li {
   color: white;
   list-style:none;
-  font-size: 8rem;
-  line-height: 6.5rem;
+  font-size: 9rem;
+  line-height: 7.5rem;
   transition: all 0.2s ease-in-out;
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
   &:nth-child(1) { transform: rotate(-4.5deg) translateX(0rem); }
-  &:nth-child(2) { transform: rotate(1.4deg) translateX(8rem); }
-  &:nth-child(3) { transform: rotate(-2.3deg) translateX(6rem); }
-  &:nth-child(4) { transform: rotate(2.9deg) translateX(-2rem); }
+  &:nth-child(2) { transform: rotate(1.4deg) translateX(11rem); }
+  &:nth-child(3) { transform: rotate(-2.3deg) translateX(3rem); }
+  &:nth-child(4) { transform: rotate(2.9deg) translateX(0rem); }
 
   &:hover, &:focus, &:active {
-    font-size: 9rem;
+    transform: scale(1.1);
   }
 }
 

@@ -26,6 +26,7 @@ function Navigation() {
         <li className='works grow'>WORKS</li>
         <li className='resume grow'>RESUME</li>
         <li className='contact grow'>CONTACT</li>
+        <li></li>
       </ul>
     </div>
   </div>
@@ -36,8 +37,15 @@ function Footer() {
   return (
   <footer>
     <div className='footer-container'>
+      <div className='location'>
+        <a href=''>Ahmedabad, India</a>
+      </div>
+      <span>01</span>
       <div className='linkedin'><a href=''>LinkedIn</a></div>
+      <span>02</span>
       <div className='github'><a href=''>GitHub</a></div>
+      <span>03</span>
+      <div className='twitter'><a href=''>Twitter</a></div>
       <div className='email'>
         <a href=''>het36100@gmail.com</a>
       </div>
