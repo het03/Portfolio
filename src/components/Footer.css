@@ -1,0 +1,55 @@
+@import url(../index.css);
+
+footer {
+    height: auto;
+    padding: 2rem;
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    box-sizing: border-box;
+    cursor: default;
+    justify-content: space-between;
+  }
+
+  footer a{
+      color: white;
+      text-decoration: none;
+  }
+  
+  .footer-container-1 {
+    font-size: 1rem;
+  }
+  
+  .social-group {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+  
+  .footer-container-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 1rem;
+  }
+  
+  span {
+    font-size: 0.7rem;
+  }
+  
+  .footer-container .base {
+    margin-right: 10px;
+  }
+  
+  .linkedin,
+  .github {
+    display: flex;
+    color: white;
+  }
+  
+  .email {
+    text-decoration: none;
+  }

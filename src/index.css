@@ -1,8 +1,19 @@
 @font-face {
   font-family: 'DrukWideBold';
-  src: local('Druk Wide Bold'), url('./Druk Wide Bold.ttf') format('truetype');
+  src: local('DrukWideBold'), url('./font/DrukWideBold.ttf') format('truetype');
   font-weight: bold;
-  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DrukWideSuper';
+  src: local('DrukWideSuper'), url('./font/DrukWideSuper.ttf') format('truetype');
+  font-weight: bolder;
+}
+
+@font-face {
+  font-family: 'DrukWideMedium';
+  src: local('DrukWideMedium'), url('./font/DrukWideMedium.otf') format('truetype');
+  font-weight: bolder;
 }
 
 :root {
@@ -10,9 +21,17 @@
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #FF5B00;
+  font-family: 'DrukWideBold', sans-serif;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 100vh;
 }
