@@ -1,10 +1,15 @@
 import React from 'react';
+import './Work.css';
 
 const Work = () => {
   return (
-    <div>
-      <h1>WORKS</h1>
-    </div>
+    <>
+      <div className='Top-container-w'>
+        <div className='Top-w'>
+          WORK
+        </div>
+      </div>
+    </>
   );
 };
 

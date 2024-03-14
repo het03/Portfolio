@@ -1,10 +1,15 @@
 import React from 'react';
+import './Contact.css';
 
 const Contact = () => {
   return (
-    <div>
-      <h1>CONTACT</h1>
-    </div>
+    <>
+      <div className='Top-container-c'>
+        <div className='Top-c'>
+          CONTACT
+        </div>
+      </div>
+    </>
   );
 };
 
