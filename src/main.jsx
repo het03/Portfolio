@@ -8,6 +8,8 @@ import Works from './pages/Work.jsx'
 import Resume from './pages/Resume.jsx'
 import Contact from './pages/Contact.jsx'
 import Error from './pages/Error.jsx'
+import Footer from './components/Footer.jsx'
+import Header from './components/Header.jsx'
 
 import './index.css'
 
@@ -37,6 +39,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <Header />
     <RouterProvider router={router} />
+    <Footer />
   </React.StrictMode>,
 );

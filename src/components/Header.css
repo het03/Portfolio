@@ -2,14 +2,18 @@
 
 header {
     padding: 2rem;
+    margin: 0;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     box-sizing: border-box;
     cursor: default;
+    a{
+      text-decoration: none;
+    }
   }
-  
+
   .main {
     display: flex;
     flex-direction: column;
@@ -20,7 +24,6 @@ header {
     color: white;
     margin-bottom: 1rem;
     transition: color 1s cubic-bezier(0, 0.52, 1, 1);
-    letter-spacing: -0.15rem;
   }
   
   .name-container:hover,
@@ -33,24 +36,15 @@ header {
   
   .fname,
   .lname {
+    font-family: 'DrukWideSuper';
     font-size: 2.5rem;
     line-height: 2.5rem;
   }
-  
-  .title a {
-    text-decoration: none;
+
+  .title{
     color: white;
-    color: white;
-    text-decoration: none;
-    background:
-      linear-gradient(to right, transparent, transparent),
-      linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
-    background-size: 100% 0.1em, 0 0.1em;
-    background-position: 100% 100%, 0 100%;
-    background-repeat: no-repeat;
-    transition: background-size 400ms;
   }
-  
+
   a:hover,
   a:focus {
     background-size: 0 0.1em, 100% 0.1em;

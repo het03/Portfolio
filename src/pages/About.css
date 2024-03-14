@@ -1,15 +1,11 @@
-.Top{
+.Top-container{
     padding: 0;
     margin: 0;
     width: 100vw;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    align-self: center;
-    gap: 60rem;
+    height: 10vh;
 }
 
-.Top-container{
+.Top {
     font-size: 7rem;
     color: transparent;
     -webkit-text-stroke-width: 4px;
@@ -17,25 +13,28 @@
     font-family: 'DrukWideSuper', sans-serif;
     transform: rotate(-3deg);
     user-select: none;
-}
+    top: 0;
+    right: 2rem;
+    position: fixed;
+  }
 
 .Text-container{
-    margin-top: 5rem;
+    margin-top: 8rem;
     width: 100vw;
-    height: auto;
     display: flex;
     justify-content: center;
-    background-color: white;
 }
 
 .Text-box{
+    height: 55vh;
+    overflow-y: auto;
     width: 90vw;
     display: flex;
     flex-wrap: wrap;
     font-size: 2rem;
     font-family: 'DrukWideMedium', sans-serif;
     line-height: 2.5rem;
-    color: #FF5B00;
+    color: white;
 }
 
 p{
