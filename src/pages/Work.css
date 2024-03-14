@@ -1,0 +1,19 @@
+.Top-container-w{
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 10vh;
+}
+
+.Top-w{
+    font-size: 7rem;
+    color: transparent;
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: black;
+    font-family: 'DrukWideSuper', sans-serif;
+    transform: rotate(1.4deg);
+    user-select: none;
+    top: 0;
+    right: 2rem;
+    position: fixed;
+  }
