@@ -14,7 +14,7 @@ footer {
   }
 
   footer a{
-      color: white;
+      color: black;
       text-decoration: none;
   }
   
@@ -47,7 +47,7 @@ footer {
   .linkedin,
   .github {
     display: flex;
-    color: white;
+    color: black;
   }
   
   .email {

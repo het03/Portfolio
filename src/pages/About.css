@@ -5,11 +5,15 @@
     height: 10vh;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 .Top {
     font-size: 7rem;
     color: transparent;
     -webkit-text-stroke-width: 4px;
-    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-color: black;
     font-family: 'DrukWideSuper', sans-serif;
     transform: rotate(-3deg);
     user-select: none;
@@ -34,7 +38,7 @@
     font-size: 2rem;
     font-family: 'DrukWideMedium', sans-serif;
     line-height: 2.5rem;
-    color: white;
+    color: black;
 }
 
 p{

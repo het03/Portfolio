@@ -1,5 +1,11 @@
 @import url(../index.css);
 
+body{
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .nav {
   box-sizing: border-box;
   display: flex;
@@ -30,7 +36,7 @@ ul li {
 ul li a {
   display: block;
   position: relative;
-  color: white;
+  color: black;
   text-decoration: none;
   transition: 1.5s cubic-bezier(.075, .82, .165, 1); 
 }
@@ -54,7 +60,7 @@ ul li:nth-child(4) {
 ul:hover li a {
   color: transparent;
   -webkit-text-stroke-width: 0.7px;
-  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-color: black;
   transition-duration: 200ms;
 }
 
@@ -62,6 +68,6 @@ ul li a:hover,
 ul li a:focus,
 ul li a:active {
   transform: scale(1.1);
-  color: white;
+  color: black;
   will-change: transform;
 }
