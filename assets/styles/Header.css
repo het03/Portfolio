@@ -1,0 +1,57 @@
+header {
+    padding: 2rem;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+    cursor: default;
+}
+  
+.hero-container{
+    width: max-content;
+}
+
+.hero {
+    color: black;
+    margin-bottom: 1rem;
+    transition: color 1s cubic-bezier(0, 0.52, 1, 1);
+}
+  
+.hero:hover,
+.hero:focus {
+    color: transparent;
+    -webkit-text-stroke-width: 0.7px;
+    -webkit-text-stroke-color: black;
+    transition-duration: 200ms;
+}
+  
+.fname,
+.lname {
+    font-weight: 900;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+}
+
+.title {
+    color: black;
+}
+  
+a:hover,
+a:focus {
+    background-size: 0 0.1em, 100% 0.1em;
+}
+  
+  /* Media Queries for Responsive Design */
+  
+@media screen and (max-width: 768px) {
+
+    .fname,
+    .lname {
+        font-size: 2.5rem;
+        line-height: 2rem;
+    }
+
+    .title {
+        font-size: 1rem;
+    }
+}
+  

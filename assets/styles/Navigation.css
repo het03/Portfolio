@@ -1,0 +1,126 @@
+.nav {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-end;
+  width: 100vw;
+  padding-right: 5rem;
+}
+
+.nav-list {
+  font-weight: 900;
+  font-size: 8.5rem;
+  line-height: 7rem;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.nav-list .nav-item {
+  list-style: none;
+  width: max-content;
+}
+
+.nav-list .nav-item a {
+  display: block;
+  position: relative;
+  color: black;
+  text-decoration: none;
+  transition: 1.5s cubic-bezier(.075, .82, .165, 1);
+}
+
+.nav-list .nav-item:nth-child(1) {
+  transform: rotate(-4.5deg) translateX(0rem);
+}
+
+.nav-list .nav-item:nth-child(2) {
+  transform: rotate(1.4deg) translateX(11rem);
+}
+
+.nav-list .nav-item:nth-child(3) {
+  transform: rotate(-2.3deg) translateX(3rem);
+}
+
+.nav-list .nav-item:nth-child(4) {
+  transform: rotate(2.9deg) translateX(0rem);
+}
+
+.nav-list:hover .nav-item a {
+  color: transparent;
+  -webkit-text-stroke-width: 0.7px;
+  -webkit-text-stroke-color: black;
+  transition-duration: 200ms;
+}
+
+.nav-list .nav-item a:hover,
+.nav-list .nav-item a:focus,
+.nav-list .nav-item a:active {
+  transform: scale(1.1);
+  color: black;
+  will-change: transform;
+}
+
+/* Media Queries for Responsive Design */
+
+@media screen and (max-width: 375px) {
+  .nav {
+    justify-content: space-around;
+    padding: 2rem;
+  }
+
+  .nav-list {
+    font-size: 2.7rem;
+    line-height: 1.5rem;
+  }
+
+  .nav-list .nav-item {
+    margin-bottom: 1rem;
+  }
+  
+  .nav-list .nav-item:nth-child(1) {
+    transform: rotate(-4.5deg) translateX(0rem);
+  }
+  
+  .nav-list .nav-item:nth-child(2) {
+    transform: rotate(1.4deg) translateX(3rem);
+  }
+  
+  .nav-list .nav-item:nth-child(3) {
+    transform: rotate(-2.3deg) translateX(3rem);
+  }
+  
+  .nav-list .nav-item:nth-child(4) {
+    transform: rotate(2.9deg) translateX(0rem);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    justify-content: space-around;
+    padding: 1rem;
+  }
+
+  .nav-list {
+    font-size: 2.7rem;
+    line-height: 1.5rem;
+  }
+
+  .nav-list .nav-item {
+    margin-bottom: 1rem;
+  }
+  
+  .nav-list .nav-item:nth-child(1) {
+    transform: rotate(-4.5deg) translateX(0rem);
+  }
+  
+  .nav-list .nav-item:nth-child(2) {
+    transform: rotate(1.4deg) translateX(3rem);
+  }
+  
+  .nav-list .nav-item:nth-child(3) {
+    transform: rotate(-2.3deg) translateX(3rem);
+  }
+  
+  .nav-list .nav-item:nth-child(4) {
+    transform: rotate(2.9deg) translateX(0rem);
+  }
+}

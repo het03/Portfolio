@@ -1,0 +1,62 @@
+footer {
+  font-weight: 500;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+span{
+  font-size: 0.7rem;
+}
+
+.social-group {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.location,
+.email,
+.cpyr {
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: gray;
+}
+
+
+@media screen and (max-width: 768px) {
+  footer{
+    padding: 1rem;
+  }
+
+  .footer-container{
+    span{
+      font-size: 0.35rem;
+    }
+  }
+
+  .social-group {
+    font-size: 0.5rem;
+    gap: 0.1rem;
+    margin: 0.2rem;
+  }
+
+  .info{
+    gap: 0.4rem;
+  }
+
+  .location,
+  .email,
+  .cpyr {
+  font-size: 0.5rem;
+  }
+}
