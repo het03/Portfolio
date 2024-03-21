@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+.about-heading {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.about-title {
+    margin: 1rem;
+    font-weight: 900;
+    font-size: 5rem;
+    transform: rotate(-3deg);
+}
+
+.text-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.text-area {
+    width: 80vw;
+    height: 50vh;
+    margin-top: 5vh;
+    overflow-y: scroll;
+    font-size: 1.6rem;
+    font-family: "League Spartan", sans-serif;
+    font-weight: 500;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text::first-letter {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-right: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    padding-top: 0.35rem;
+    border-radius: 0.2rem;
+}
+
+.text-box {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin-bottom: 10rem;
+}
+
+.about {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-wrap: wrap;
+    text-align: left;
+    line-height: 2rem;
+    gap: 2rem;
+}
+
+.about-skills {
+    display: flex;
+    flex-direction: column;  
+    justify-content: space-between;
+}
+
+.chip-container {
+    width: 20vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.chip {
+    background-color: gray;
+    color: white;
+    border-radius: 10rem;
+    padding: 0.5rem;
+    margin: 0.3rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.skill-title {
+    font-size: 2rem;
+    font-weight: 900;
+    margin: 0.2rem;
+    padding-bottom: 1rem;
+}
