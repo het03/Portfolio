@@ -79,7 +79,7 @@
   margin: 0;
 }
 
-@keyframes playGif {
+/* @keyframes playGif {
   0% {
     background-image: url("../assets/images/BlackDustOverlay.gif");
   }
@@ -89,20 +89,20 @@
   100% {
     background-image: url("../assets/images/frozenFrame.gif");
   }
-}
+} */
 
 html, body {
   max-width: 100vw;
   overflow-x: hidden;
   overflow-y: hidden;
 
-  color: rgb(var(--background-end-rgb));
+  color: black;
 
-  animation: playGif 5s forwards;
+  background-image: url("../assets/images/BlackDustOverlay.gif");
+  /* animation: playGif 5s forwards; */
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 
 a {
   color: inherit;
