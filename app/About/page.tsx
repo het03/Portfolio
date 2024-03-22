@@ -1,4 +1,4 @@
-'use'
+'use client'
 import React from 'react';
 import './About.css';
 import Reveal from '@/components/utils/Reveal';
@@ -36,8 +36,10 @@ export default function About() {
               <p>
               If you're in search of a skilled and reliable front-end developer to bring your vision to life, I'm here to help. Let's connect and turn your ideas into reality!
               </p>
-              <a className="about-link" href="/Contact">Contact me</a>
             </div>
+          </Reveal>
+          <Reveal>
+          <a className="about-link" href="/Contact">Contact me</a>
           </Reveal>
           </div>
           <div className="about-skills">
