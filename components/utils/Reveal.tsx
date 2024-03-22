@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
@@ -26,7 +26,7 @@ export default function Reveal({ children, width = 'fit-content' }: Props) {
       <div ref={ref}>
         <motion.div
           variants={{
-            hidden: { opacity: 0, y: 75 },
+            hidden: { opacity: 0, y: -75 },
             visible: { opacity: 1, y: 0 },
           }}
           initial="hidden"

@@ -1,12 +1,14 @@
+'use client'
 import React from 'react'
+import { motion } from 'framer-motion'
 import '@/assets/styles/Navigation.css'
 
 export default function Navigation() {
   return (
-    <div
-    //   initial={{ scale: 0, opacity: 0 }}
-    //   animate={{ scale: 1, opacity: 1 }}
-    //   transition={{ duration: 0.5 }}
+    <motion.div
+      initial={{ scale: 0, opacity: 0 }}
+      animate={{ scale: 1, opacity: 1 }}
+      transition={{ duration: 0.7 }}
       className='nav'
     >
       <div className='nav-container'>
@@ -25,6 +27,6 @@ export default function Navigation() {
           </li>
         </ul>
       </div>
-    </div>
+    </motion.div>
   )
 }
