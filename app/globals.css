@@ -98,10 +98,7 @@ html, body {
 
   color: black;
 
-  background-image: url("../assets/images/BlackDustOverlay.gif");
   /* animation: playGif 5s forwards; */
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 a {
@@ -111,6 +108,6 @@ a {
 
 @media (prefers-color-scheme: dark) {
   html {
-    color-scheme: dark;
+    color-scheme: light;
   }
 }
