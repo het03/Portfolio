@@ -39,7 +39,7 @@
 
 .text::first-letter {
     display: inline-flex;
-    font-size: 2.1rem;
+    font-size: 4rem;
     font-weight: bold;
     margin-right: 0.2rem;
     background-color: rgba(255, 255, 255, 0.5);
@@ -47,6 +47,7 @@
 }
 
 .text-box {
+    margin-top: 1rem;
     display: flex;
     justify-content: center;
     gap: 4rem;
