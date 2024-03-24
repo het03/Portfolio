@@ -79,18 +79,6 @@
   margin: 0;
 }
 
-/* @keyframes playGif {
-  0% {
-    background-image: url("../assets/images/BlackDustOverlay.gif");
-  }
-  90% {
-    background-image: url("../assets/images/BlackDustOverlay.gif");
-  }
-  100% {
-    background-image: url("../assets/images/frozenFrame.gif");
-  }
-} */
-
 html, body {
   max-width: 100vw;
   overflow-x: hidden;
@@ -98,7 +86,6 @@ html, body {
 
   color: black;
 
-  /* animation: playGif 5s forwards; */
 }
 
 a {
