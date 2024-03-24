@@ -59,7 +59,7 @@ export default function About() {
           <div className="about-skills">
             <div className="about-category">
               <Reveal>
-              <div className='skill-title'>For Work</div>
+              <div className="skill-title">For Work</div>
               </Reveal>
               <Reveal>
                 <div className="chip-container">
@@ -74,7 +74,7 @@ export default function About() {
             </div>
             <div className="about-category">
               <Reveal>
-                <div className='skill-title'>For Fun</div>
+                <div className="skill-title">For Fun</div>
               </Reveal>
               <Reveal>
                 <div className="chip-container">
