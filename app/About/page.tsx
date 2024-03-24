@@ -30,7 +30,7 @@ export default function About() {
           <Reveal>
             <div className="text">
             <p>
-              Hi there! I'm Het, a software engineer with a passion for both drawing and front-end web development.
+              Hi there! I&apos;m Het, a software engineer with a passion for both drawing and front-end web development.
               Originally from Gujarat, India. I bring a wealth of enthusiasm and expertise to every project I undertake.
             </p>
             </div>
@@ -40,15 +40,15 @@ export default function About() {
               <p>
               With a keen eye for detail and a knack for problem-solving, 
               I specialize in leveraging front-end technologies such as React, HTML, CSS , JavaScript and more to create intuitive and visually stunning user interfaces.
-              Whether it's building responsive websites, optimizing user experiences, or implementing cutting-edge design trends, 
-              I thrive on pushing the boundaries of what's possible in web development.
+              Whether it&apos;s building responsive websites, optimizing user experiences, or implementing cutting-edge design trends, 
+              I thrive on pushing the boundaries of what&apos;s possible in web development.
               </p>
             </div>
           </Reveal>
           <Reveal>
             <div>
               <p>
-              If you're in search of a skilled and reliable front-end developer to bring your vision to life, I'm here to help. Let's connect and turn your ideas into reality!
+              If you&apos;re in search of a skilled and reliable front-end developer to bring your vision to life, I&apos;m here to help. Let&apos;s connect and turn your ideas into reality!
               </p>
             </div>
           </Reveal>
