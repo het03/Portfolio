@@ -1,10 +1,24 @@
 'use client'
-import React from 'react';
+import React, {useEffect, useState} from 'react';
+import InitialPageTransition from '@/components/utils/InitialPageTransition';
 import './About.css';
 import Reveal from '@/components/utils/Reveal';
 
 export default function About() {
+
+  const [showContent, setShowContent] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowContent(true);
+    }, 850); 
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
+    <>
+    <InitialPageTransition />
+    {showContent && (
     <div className="about-container">
       <div className="about-heading">
         <div className="about-title">ABOUT</div>
@@ -79,5 +93,7 @@ export default function About() {
         </div>
       </div>
     </div>
+    )}
+    </>
   );
 }
