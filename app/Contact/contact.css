@@ -1,0 +1,93 @@
+.contact-heading {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.contact-title {
+    margin: 1rem;
+    font-weight: 900;
+    font-size: 5rem;
+    transform: rotate(1.5deg);
+}
+
+.form-container{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#form{
+    height: 30vh;
+    width: 99vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner-form{
+    height: inherit;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 0.2rem solid black;
+}
+
+#name, #email, #message{
+    width: 15rem;
+    height: 3rem;
+    border: none;
+    border-bottom: 0.2rem solid black;
+}
+
+input::placeholder{
+    color: #424242;
+    padding: 0%;
+    margin: 0%;
+    font-weight: 700;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+}
+
+input[type="text"]:focus, input[type="text"]:not(:placeholder-shown){
+    font-size: 1.3rem;
+    font-weight: 700;
+    outline: none; 
+    border-color: transparent; 
+    display: flex;
+    align-items: center;
+  }
+
+  .send-btn{
+    width: 35vw;
+    height: inherit;
+    border-bottom: 0.2rem solid black;
+    border-top: 0.2rem solid black;
+    border-right: 0.2rem solid black;
+    border-left: none;
+    background-color: black;
+    color: white;
+    font-size: 5rem;
+    font-weight: 700;
+    letter-spacing: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  }
+
+  .send-btn:hover{
+    background-color: #1C1C1C;
+    color: white;
+  }
+
+  .send-btn:active{
+    background-color: white;
+    color: black;
+  }
+  
+  @keyframes stripe-slide {
+    0% { background-position: 0% 0; }
+    100% { background-position: 100% 0; }
+}
