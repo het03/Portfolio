@@ -1,10 +1,10 @@
-'use client'
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import localfont from "next/font/local";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import InitialPageTransition from "@/components/utils/InitialPageTransition";
+import { Metadata } from 'next';
 
 const DrukWide = localfont({
   src: [
@@ -26,34 +26,26 @@ const DrukWide = localfont({
   ],
 });
 
+export const metadata: Metadata = {
+  title: "Het Gajera",
+  description: "Home page",
+}
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
 
-  const [showContent, setShowContent] = useState(false);
-
-  useEffect(() => {
-    // Simulate delay to play initial page transition
-    const timer = setTimeout(() => {
-      setShowContent(true);
-    }, 1500); // Adjust this delay to match the duration of your initial page transition
-    return () => clearTimeout(timer);
-  }, []);
-
-  
   return (
     <html lang="en">
+      <head>
+        <link rel='icon' href='./favicon.ico' />
+      </head>
       <body className={DrukWide.className} style={{height: "100vh", display: "flex", flexDirection: "column", justifyContent: "space-between"}}>
-        <InitialPageTransition />
-        {showContent && (
-          <>
             <Header />
-            {children}
+              {children}
             <Footer />
-          </>
-        )}
       </body>
     </html>
   );
