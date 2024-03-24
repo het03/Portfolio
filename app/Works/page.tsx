@@ -30,10 +30,13 @@ export default function Works() {
 
 
   return (
-    <> 
+    <>
     <InitialPageTransition />
     {showContent && (
-    <div className="work-container">
+    <> 
+    <div className='work-heading'>
+      <div className="work-title">WORKS</div>
+    </div>
       <AnimatePresence>
         <div className="work-list">
           {projects.map((project, index) => (
@@ -53,7 +56,7 @@ export default function Works() {
                   <span className='year'>{project.year}</span>
                   {Array.from(project.title).map((char, charIndex) => (
                     <motion.div
-                      className="work-title"
+                      className="work"
                       key={char + '-' + charIndex}
                       variants={letterVariants}
                       initial="hidden"
@@ -70,7 +73,7 @@ export default function Works() {
           ))}
         </div>
       </AnimatePresence>
-    </div>
+    </>
     )}
     </>
   );

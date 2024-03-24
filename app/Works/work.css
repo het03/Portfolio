@@ -1,3 +1,16 @@
+.work-heading {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.work-title {
+  margin: 1rem;
+  font-weight: 900;
+  font-size: 5rem;
+  transform: rotate(1.5deg);
+}
+
 .work-container {
     display: flex;
     flex-wrap: wrap;
@@ -33,7 +46,7 @@
     padding: 4rem;
   }
 
-  .work-title { 
+  .work { 
     font-size: 3rem;
   }
   
