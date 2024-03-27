@@ -20,24 +20,22 @@ export default function Header() {
   };
 
   return (
-    <header>
-    <motion.div
-      variants={variants}
-      custom={-200}
-      initial="initial"
-      animate="final"
-      className='hero-container'
-    >
+    <motion.header 
+    variants={variants}
+    custom={-200}
+    initial="initial"
+    animate="final">
+    <div className='header-container'>
       <a href='/'>
-        <div className='hero'>
+        <div className='name'>
           <div className='fname'>HET</div>
           <div className='lname'>GAJERA</div>
         </div>
       </a>
-      <div className='title'>
+      <div className='prof-title'>
         Desginer & Developer
       </div>
-    </motion.div>
-  </header>
+    </div>
+  </motion.header>
   )
 }
