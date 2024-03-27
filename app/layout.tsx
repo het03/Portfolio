@@ -3,7 +3,6 @@ import localfont from "next/font/local";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import InitialPageTransition from "@/components/utils/InitialPageTransition";
 import { Metadata } from 'next';
 
 const DrukWide = localfont({
