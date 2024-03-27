@@ -11,7 +11,6 @@ export default function Navigation() {
       transition={{ duration: 0.7 }}
       className='nav'
     >
-      <div className='nav-container'>
         <ul className='nav-list'>
           <li className='nav-item' >
             <a href='/About'>ABOUT</a>
@@ -26,7 +25,6 @@ export default function Navigation() {
             <a href='/Contact'>CONTACT</a>
           </li>
         </ul>
-      </div>
     </motion.div>
   )
 }
