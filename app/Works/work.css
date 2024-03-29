@@ -1,25 +1,22 @@
-.work-heading {
-  position: fixed;
-  top: 0;
-  right: 0;
-}
-
-.work-title {
-  margin: 1rem;
-  font-weight: 900;
-  font-size: 5rem;
-  transform: rotate(1.5deg);
-}
-
 .work-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    user-select: none;
+    width: 100vw;
+    height: inherit;
+  }
+  
+  .work-heading {
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+  
+  .work-title {
+    font-weight: 900;
+    font-size: 2.5rem;
+    margin: 1rem;
   }
   
   .work-list {
-    position: absolute;
+    position: relative;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -29,7 +26,6 @@
     justify-content: center;
     align-items: center;
     font-weight: 900;
-    line-height: 3rem;
   }
   
   .year {
@@ -43,26 +39,11 @@
     text-align: center;
     position: relative;
     z-index: 1;
-    padding: 4rem;
-  }
-
-  .work { 
+    margin: 0rem 3rem 3rem 3rem;
     font-size: 3rem;
+    line-height: 3.5rem;
   }
   
-  .oval-shadow {
-    position: fixed;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 300px;
-    height: 100px; 
-    border-radius: 50%;
-    background: rgba(0, 0, 0, 0.2);
-    filter: blur(1.2rem); 
-    z-index: -1;
-  }
-
   .project-wrapper {
     position: relative;
   }
@@ -78,3 +59,66 @@
     background: rgba(0, 0, 0, 0.3);
     filter: blur(0.7rem);
   }
+  
+  @media screen and (max-width: 767px) {
+    .work-heading {
+      width: inherit;
+      top: 8rem;
+    }
+  
+    .work-title {
+      text-align: center;
+      margin: 1rem;
+      font-size: 1.5rem;
+    }
+  
+    .work-list {
+      width: 100vw;
+      flex-direction: row;
+    }
+  
+    .year {
+      font-size: 0.5rem;
+    }
+  
+    .work {
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+  
+    .project-card {
+      margin: 1rem;
+    }
+  
+    .oval-shadow {
+      width: 70px;
+      height: 8px;
+      filter: blur(0.45rem);
+    }
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .work-title {
+      margin: 1rem;
+      font-size: 2.5rem;
+    }
+  
+    .work-list {
+      height: 60vh;
+      gap: 3rem;
+    }
+  
+    .year {
+      font-size: 0.7rem;
+    }
+  
+    .work {
+      font-size: 2rem;
+      line-height: 2.5rem;
+    }
+  
+    .project-card {
+      margin: 1rem;
+    }
+  }
+  

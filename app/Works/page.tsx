@@ -33,7 +33,7 @@ export default function Works() {
     <>
     <InitialPageTransition />
     {showContent && (
-    <> 
+    <div className= "work-container"> 
     <div className='work-heading'>
       <div className="work-title">WORKS</div>
     </div>
@@ -43,7 +43,7 @@ export default function Works() {
             <div className='project-wrapper' key={index}>
               <motion.div 
                 animate={{
-                  y: [10, -10, 10, -10, 10],
+                  y: [5, -5, 5, -5, 5],
                   transition: { repeat: Infinity, duration: 3, ease: 'easeInOut' }
                 }}
                 whileHover={{ 
@@ -73,7 +73,7 @@ export default function Works() {
           ))}
         </div>
       </AnimatePresence>
-    </>
+    </div>
     )}
     </>
   );

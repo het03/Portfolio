@@ -49,7 +49,7 @@ export default function Footer() {
       <div className='info'>
         <div className='location'>Chennai, India</div>
         <a href='mailto:het36100@gmail.com'><div className='email'>het36100@gmail.com</div></a>
-        <div className='cpyr'>Copyright © 2024 Het Gajera. All rights reserved.</div>
+        <div className='cpyr'>© 2024 Het Gajera</div>
       </div>
     </motion.footer>
   )
