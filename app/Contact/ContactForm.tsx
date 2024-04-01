@@ -2,8 +2,9 @@
 
 import React from 'react'
 import { motion } from 'framer-motion'
-import './contact.css'
 import Reveal from '@/components/utils/Reveal';
+
+import './contact.css'
 
 
 export default function ContactForm(){
@@ -35,32 +36,39 @@ export default function ContactForm(){
         }
       }
 
-
     return(
         <motion.div 
         className='form-container'>
-            <form onSubmit={handleSubmit} id='form'>
-            <motion.div 
-                    initial={{ opacity: 0, x: -500 }}
-                    animate={{ opacity: 1, x: 0}}
-                    transition={{ duration: 0.7, delay: 0.3}}
-            className='inner-form'>
-            <div className='name-container'>
-                <input placeholder='NAME' type='text' id='name' name='name' autoComplete='off'minLength={3} maxLength={150} required/>
+          <div className="grid-container">
+            <div className="upper">
+            <div className='img'>
             </div>
-            <div className='email-container'>
-                <input placeholder='EMAIL' type='text' id='email' name='email' autoComplete='on' minLength={5} maxLength={150} required/>
+              <div className="contact">
+                CONTACT
+              </div>
             </div>
-            <div className='message-container'>
-                <input placeholder='MESSAGE' type='text' name='message' id='message' autoComplete='off'minLength={10} maxLength={1000} required />
+
+            <div className="lower">
+
+              <form onSubmit={handleSubmit} className='form'>
+                <div className='name-container'>
+                    <input placeholder='NAME' type='text' id='name' name='name' autoComplete='off'minLength={3} maxLength={150} required/>
+                </div>
+                <div className='email-container'>
+                    <input placeholder='EMAIL' type='text' id='email' name='email' autoComplete='on' minLength={5} maxLength={150} required/>
+                </div>
+                <div className='message-container'>
+                    <input placeholder='MESSAGE' type='text' name='message' id='message' autoComplete='off'minLength={10} maxLength={1000} required />
+                </div>
+              </form>
+
+              <button
+                type='submit' className='send-btn'>SEND
+              </button>
+
             </div>
-            </motion.div>
-            <motion.button
-                initial={{ opacity: 0, x: 500 }}
-                animate={{ opacity: 1, x: 0}}
-                transition={{ duration: 0.7, delay: 0.3}}
-              type='submit' className='send-btn'>SEND</motion.button>
-            </form>
+
+          </div>
         </motion.div>
     )
 }

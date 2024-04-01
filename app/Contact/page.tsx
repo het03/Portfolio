@@ -19,9 +19,6 @@ export default function Contact() {
       <InitialPageTransition />
       {showContent && (
         <>
-          <div className='contact-heading'>
-            <div className="contact-title">CONTACT</div>
-          </div>
           <ContactForm />
         </>
       )}

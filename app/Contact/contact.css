@@ -1,45 +1,91 @@
-.contact-heading {
-    position: fixed;
-    top: 0;
-    right: 0;
-}
-
-.contact-title {
-    margin: 1rem;
-    font-weight: 900;
-    font-size: 5rem;
-    transform: rotate(1.5deg);
-}
-
 .form-container{
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#form{
-    height: 30vh;
-    width: 99vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.grid-container {
+  box-sizing: border-box;
+  height: auto;
+  width: inherit;
+  display: grid; 
+  grid-auto-rows: 1fr; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: 15rem 15rem; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "upper"
+    "lower"; 
 }
 
-.inner-form{
-    height: inherit;
-    width: 100vw;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border: 0.2rem solid black;
+.upper {
+  display: grid; 
+  grid-template-columns: 0.7fr 1.3fr; 
+  grid-template-rows: 1fr; 
+  grid-template-areas: 
+    "img contact"; 
+  grid-area: upper; 
+}
+
+.img { 
+  position: relative;
+  grid-area: img;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  grid-area: img;
+  background-image: linear-gradient(-45deg, black 25%, transparent 25%, transparent 50%, black 50%, black 75%, transparent 75%, transparent);
+  background-size: 9rem 9rem;
+}
+
+.lower {
+  display: grid; 
+  grid-template-columns: 1fr 1fr 0.8fr 1.2fr;
+  grid-template-rows: 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "form form form send-btn"; 
+  grid-area: lower; 
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.form {
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "name email message"; 
+  grid-area: form; 
+}
+
+#name { grid-area: name; }
+#email { grid-area: email; }
+#message { grid-area: message; }
+
+.contact {
+  font-weight: 900;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: contact;
+  border-top: 2px solid black;
 }
 
 #name, #email, #message{
-    width: 15rem;
-    height: 3rem;
+    width: 15vw;
+    height: 4vh;
     border: none;
-    border-bottom: 0.2rem solid black;
+    border-bottom: 2px solid black;
+}
+
+.message-container, .name-container, .email-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 input::placeholder{
@@ -47,13 +93,13 @@ input::placeholder{
     padding: 0%;
     margin: 0%;
     font-weight: 700;
-    font-size: 1.3rem;
+    font-size: 1rem;
     display: flex;
     align-items: center;
 }
 
 input[type="text"]:focus, input[type="text"]:not(:placeholder-shown){
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 700;
     outline: none; 
     border-color: transparent; 
@@ -62,17 +108,15 @@ input[type="text"]:focus, input[type="text"]:not(:placeholder-shown){
   }
 
   .send-btn{
-    width: 35vw;
+    border-top-style: none;
+    border-bottom-style: none;
+    grid-area: send-btn; 
     height: inherit;
-    border-bottom: 0.2rem solid black;
-    border-top: 0.2rem solid black;
-    border-right: 0.2rem solid black;
-    border-left: none;
+    border-color: black;
     background-color: black;
     color: white;
-    font-size: 5rem;
-    font-weight: 700;
-    letter-spacing: 1rem;
+    font-size: 4rem;
+    font-weight: 900;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
   }
@@ -90,4 +134,76 @@ input[type="text"]:focus, input[type="text"]:not(:placeholder-shown){
   @keyframes stripe-slide {
     0% { background-position: 0% 0; }
     100% { background-position: 100% 0; }
+}
+
+@media screen and (max-width: 768px) {
+  .grid-container {
+    display: grid;
+    grid-template-rows: auto 1fr;
+  }
+
+  .upper{
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    grid-template-areas: 
+      "img"
+      "contact"; 
+    grid-area: upper; 
+  }
+
+  .lower {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact {
+    font-size: 2rem;
+    padding: 2rem;
+  }
+
+  .img{
+    border-right: none;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 3rem;
+  }
+
+  .send-btn {
+    border-top: 2px solid black;
+    font-size: 2rem;
+    padding: 2rem;
+  }
+
+  #name, #email, #message{
+    width: 60vw;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .contact{
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+
+  .form{
+    padding: 2rem;
+  }
+
+  input::placeholder{
+    font-size: 0.8rem;
+    font-weight: 900;
+  }
+
+  input[type="text"]:focus, input[type="text"]:not(:placeholder-shown){
+    font-size: 1srem;
+  }
+
+  .send-btn{
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
 }
