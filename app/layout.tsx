@@ -41,7 +41,7 @@ export default function RootLayout({
       <head>
         <link rel='icon' href='./favicon.ico' />
       </head>
-      <body className={DrukWide.className} style={{height: "100vh", display: "flex", flexDirection: "column", justifyContent: "space-between"}}>
+      <body className={DrukWide.className}>
             <Header />
               {children}
             <Footer />

@@ -50,7 +50,7 @@ export default function ContactForm(){
 
             <div className="lower">
 
-              <form onSubmit={handleSubmit} className='form'>
+              <form onSubmit={handleSubmit} id='form' className='form'>
                 <div className='name-container'>
                     <input placeholder='NAME' type='text' id='name' name='name' autoComplete='off'minLength={3} maxLength={150} required/>
                 </div>
