@@ -37,7 +37,7 @@ export default function About() {
               </Reveal>
               <Reveal>
               <div className='text'>
-              With a keen eye for detail and a knack for problem-solving, I specialize in leveraging front-end technologies such as React, HTML, CSS , JavaScript and more to create intuitive and visually stunning user interfaces. Whether it&apos;s building responsive websites, optimizing user experiences, or implementing cutting-edge design trends, I thrive on pushing the boundaries of what's possible in web development.
+              With a keen eye for detail and a knack for problem-solving, I specialize in leveraging front-end technologies such as React, HTML, CSS , JavaScript and more to create intuitive and visually stunning user interfaces. Whether it&apos;s building responsive websites, optimizing user experiences, or implementing cutting-edge design trends, I thrive on pushing the boundaries of what&apos;s possible in web development.
               </div>
               </Reveal>
               <Reveal>
