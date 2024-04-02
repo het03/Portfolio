@@ -60,12 +60,12 @@ export default function ContactForm(){
                 <div className='message-container'>
                     <input placeholder='MESSAGE' type='text' name='message' id='message' autoComplete='off'minLength={10} maxLength={1000} required />
                 </div>
-              </form>
 
               <button
                 type='submit' className='send-btn'>SEND
               </button>
-
+              
+              </form>
             </div>
 
           </div>

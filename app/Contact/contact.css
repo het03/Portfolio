@@ -41,11 +41,11 @@
 
 .lower {
   display: grid; 
-  grid-template-columns: 1fr 1fr 0.8fr 1.2fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr; 
   grid-template-rows: 1fr; 
   gap: 0px 0px; 
   grid-template-areas: 
-    "form form form send-btn"; 
+    "form form form form"; 
   grid-area: lower; 
   border-top: 2px solid black;
   border-bottom: 2px solid black;
@@ -53,11 +53,11 @@
 
 .form {
   display: grid; 
-  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-columns: 1fr 1fr 1fr 1fr; 
   grid-template-rows: 1fr; 
   gap: 0px 0px; 
   grid-template-areas: 
-    "name email message"; 
+    "name email message send-btn"; 
   grid-area: form; 
 }
 
