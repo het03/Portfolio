@@ -21,7 +21,7 @@ export default function Resume() {
     {showContent && (
       <>
     <div className='resume-heading'>
-      <div className="resume-title">CONTACT</div>
+      <div className="resume-title">RESUME</div>
     </div>
     <div className='resume-container'>
       <h1>Will add shortly</h1>
