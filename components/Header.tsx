@@ -33,7 +33,7 @@ export default function Header() {
         </div>
       </a>
       <div className='prof-title'>
-        Desginer & Developer
+        Designer & Developer
       </div>
     </div>
   </motion.header>
