@@ -1,95 +1,86 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
 
-::-webkit-scrollbar {
-    width: 0;
+.about-container{
+max-height: 1280vh;
+scroll-snap-type:y mandatory;
+
 }
 
-.about-heading {
-    position: fixed;
-    top: 0;
-    right: 0;
+section {
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
-.about-title {
-    margin: 1rem;
-    font-weight: 900;
-    font-size: 5rem;
-    transform: rotate(-3deg);
+.about-title{ 
+font-size: 5rem;
+font-weight: 900;
+color: black;
 }
 
-.text-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.text-container{
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
 }
 
-.text-area {
-    width: 80vw;
-    height: 50vh;
-    margin-top: 5vh;
-    overflow-y: scroll;
-    font-size: 1.6rem;
-    font-family: "League Spartan", sans-serif;
-    font-weight: 500;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.text{
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 2rem;
+  text-align: justify;
 }
 
-.text::first-letter {
-    display: inline-flex;
-    font-size: 4rem;
-    font-weight: bold;
-    margin-right: 0.2rem;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 0.2rem;
+#a::first-letter{
+  font-size: 2rem;
+  font-weight: 900;
 }
 
-.text-box {
-    margin-top: 1rem;
-    display: flex;
-    justify-content: center;
-    gap: 4rem;
-    margin-bottom: 10rem;
+.bg-img{
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  display: block;
+  height: inherit;
+  width: inherit;
+  background-image: url('/monogatari.jpg');
+  background-size: cover;
+  filter: opacity(80%) grayscale(30%) blur(5px); 
 }
 
-.about {
-    width: 50vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-wrap: wrap;
-    text-align: left;
-    line-height: 2rem;
-    gap: 2rem;
+.contact-btn{
+  width: fit-content;
+  padding: 1rem;
+  height: 3.2rem;
+  border: 2px solid black;
+  background-color: transparent;
+  font-weight: 900;
+  font-size: 0.8rem;
+  cursor: pointer;
+  border-radius: 2rem;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.about-skills {
-    display: flex;
-    flex-direction: column;  
-    justify-content: space-between;
+.contact-btn:hover{
+  background-color: black;
+  color: white;
 }
 
-.chip-container {
-    width: 20vw;
-    display: flex;
-    flex-wrap: wrap;
+.skill-page{
+  width: inherit;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
-.chip {
-    background-color: gray;
-    color: white;
-    border-radius: 10rem;
-    padding: 0.5rem;
-    margin: 0.3rem;
-    font-size: 1.2rem;
-    font-weight: 500;
-}
-
-.skill-title {
-    font-size: 2rem;
-    font-weight: 900;
-    margin: 0.2rem;
-    padding-bottom: 1rem;
+.skill{
+  letter-spacing: 0.5rem;
+  font-weight: 900;
+  font-size: 5rem;
+  transform: rotate(270deg);
 }
