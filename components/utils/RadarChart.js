@@ -4,6 +4,9 @@ import { Chart } from "chart.js/auto";
 
 export default function RadarChart() {
   const chartRef = useRef(null);
+  const chartFontSize = window.innerWidth > 768 ? 16 : 10;
+  const ticksFontSize = window.innerWidth > 768 ? 14 : 8;
+
 
   useEffect(() => {
     if (chartRef.current) {
@@ -33,13 +36,13 @@ export default function RadarChart() {
             r: {
               pointLabels: {
                 font: {
-                  size: 16, 
+                  size: chartFontSize,
                   weight: 700,
                 },
               },
               ticks: {
                 font: {
-                  size: 14,
+                  size: ticksFontSize,
                   weight: 700,
                 },
               },
@@ -52,8 +55,8 @@ export default function RadarChart() {
     }
   }, []);
   return (
-    <div style={{display:'flex', justifyContent:'center', height:'80vh', width:'60vw'}}>
-      <canvas ref={chartRef}/>
+    <div style={{display:'flex', justifyContent:'center', maxHeight:'100vh', maxWidth:'100vw'}}>
+      <canvas ref={chartRef} style={{height:'60vh', width:'60vw'}}/>
     </div>
   );
 }

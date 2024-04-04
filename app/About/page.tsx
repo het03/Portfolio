@@ -50,7 +50,15 @@ export default function About() {
               </Reveal>
             </div>
             <Reveal>
-            <Image src='/eva.jpg' alt='' width={600} height={900} objectFit='cover'/>
+            <div style={{ maxWidth: '500px' }} className='eva'>
+              <Image
+                src="/eva.jpg"
+                alt="my-artwork1"
+                width={300}
+                height={600}
+                layout="responsive"
+              />
+            </div>
             </Reveal>
             </section>
 

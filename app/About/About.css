@@ -22,6 +22,7 @@ color: black;
 .text-container{
   width: 90vw;
   display: flex;
+  max-width: 800px; /* Adjust max-width as needed */
   flex-direction: column;
   gap: 2rem;
   padding: 2rem;
@@ -53,7 +54,9 @@ color: black;
 }
 
 .contact-btn{
+  width: 70%;
   width: fit-content;
+  max-width: 300px; /* Adjust max-width as needed */
   padding: 1rem;
   height: 3.2rem;
   border: 2px solid black;
@@ -71,7 +74,8 @@ color: black;
 }
 
 .skill-page{
-  width: inherit;
+  width: 90%;
+  max-width: 800px; /* Adjust max-width as needed */
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -83,4 +87,92 @@ color: black;
   font-weight: 900;
   font-size: 5rem;
   transform: rotate(270deg);
+}
+
+/* Small devices (phones, 320px and up) */
+@media only screen and (max-width: 375px) {
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .text-container{
+    width: inherit;
+    gap: 1rem;
+  }
+
+  .eva{
+    display: none;
+  }
+
+  .text {
+    font-size: 0.6rem;
+    line-height: 1.5rem;
+  }
+
+  #a::first-letter {
+    font-size: 3.5vw;
+  }
+
+  .contact-btn {
+    font-size: 0.6rem;
+    padding: 0.5rem;
+    height: 2rem;
+  }
+
+  .skill-page{
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .skill {
+    font-size: 1rem;
+    letter-spacing: 0.2rem  ;
+  }
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 376px) and (max-width: 768px) {
+  .about-title {
+    font-size: 2.2rem;
+  }
+
+  .text-container{
+    width: inherit;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .text {
+    font-size: 0.8rem;
+  }
+
+  #a::first-letter {
+    font-size: 3vw;
+  }
+
+  .eva{
+    display: none;
+  }
+
+  .contact-btn {
+    font-size: 0.6rem;
+  }
+
+  .skill-page{
+    height: 100vh;
+    width: inherit;
+  }
+
+  .skill {
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem ;
+    padding-right: -1.2rem;
+  }
+}
+
+@media only screen and (min-width: 1024px){
+  .skill{
+    font-size: 3rem;
+  }
 }
