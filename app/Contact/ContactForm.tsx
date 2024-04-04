@@ -37,7 +37,7 @@ export default function ContactForm(){
       }
 
     return(
-        <motion.div 
+        <div 
         className='form-container'>
           <div className="grid-container">
             <div className="upper">
@@ -69,6 +69,6 @@ export default function ContactForm(){
             </div>
 
           </div>
-        </motion.div>
+        </div>
     )
 }
