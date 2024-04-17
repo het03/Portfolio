@@ -20,10 +20,7 @@ export default function Resume() {
     <InitialPageTransition />
     {showContent && (
       <>
-    <div className='resume-heading'>
-      <div className="resume-title">RESUME</div>
-    </div>
-    <div className='resume-container'>
+    <div className='resume-container' style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%'}}>
       <h1>Will add shortly</h1>
     </div>
     </>
