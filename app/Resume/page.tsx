@@ -1,6 +1,7 @@
 'use client'
 import React, {useEffect, useState} from 'react';
 import InitialPageTransition from '@/components/utils/InitialPageTransition';
+import { PDFViewer } from '@react-pdf/renderer';
 import './resume.css'
 
 export default function Resume() {
@@ -19,11 +20,12 @@ export default function Resume() {
   <>
     <InitialPageTransition />
     {showContent && (
-      <>
-    <div className='resume-container' style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%'}}>
-      <h1>Will add shortly</h1>
+      <div className='resume-container'>
+        <div className="resume-heading">
+          <div className='resume-title'>RESUME</div>
+        </div>
+        <h1>will add shortly</h1>
     </div>
-    </>
     )}
     </>
   )
