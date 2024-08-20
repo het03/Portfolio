@@ -1,178 +1,159 @@
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
-
-.about-container{
-max-height: 1280vh;
-scroll-snap-type:y mandatory;
-
-}
-
-section {
-height: 100vh;
-display: flex;
-justify-content: center;
-align-items: center;
-}
-
-.about-title{ 
-font-size: 5rem;
-font-weight: 900;
-color: black;
-}
-
-.text-container{
-  width: 90vw;
+.Acontainer{
   display: flex;
-  max-width: 800px; /* Adjust max-width as needed */
-  flex-direction: column;
-  gap: 2rem;
-  padding: 2rem;
-}
-
-.text{
-  font-size: 1.2rem;
-  font-weight: 500;
-  line-height: 2rem;
-  text-align: justify;
-}
-
-#a::first-letter{
-  font-size: 2rem;
-  font-weight: 900;
-}
-
-.bg-img{
-  position: absolute;
-  left: 0;
-  right: 0;
-  z-index: -1;
-  display: block;
-  height: inherit;
-  width: inherit;
-  background-image: url('/monogatari.jpg');
-  background-size: cover;
-  filter: opacity(80%) grayscale(30%) blur(5px); 
-}
-
-.contact-btn{
-  width: 70%;
-  width: fit-content;
-  max-width: 300px; /* Adjust max-width as needed */
-  padding: 1rem;
-  height: 3.2rem;
-  border: 2px solid black;
-  background-color: transparent;
-  font-weight: 900;
-  font-size: 0.8rem;
-  cursor: pointer;
-  border-radius: 2rem;
-  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-
-.contact-btn:hover{
-  background-color: black;
-  color: white;
-}
-
-.skill-page{
-  width: 90%;
-  max-width: 800px; /* Adjust max-width as needed */
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3em;
+  height: inherit;
 }
 
-.skill{
-  letter-spacing: 0.5rem;
+.Aheader{
+  font-weight: 500;
+  font-size: 3em;
+}
+
+.Amain{
+  text-align: justify;
+  font-size: 1.35em;
+  font-weight: 500;
+  margin-left: 15em;
+  margin-right: 15em;
+  line-height: 2em;
+}
+
+.connect{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+
+.contact{
+  position: relative;
+  height: 50px;
+  padding: 0 30px;
+  border: 2px solid #000;
+  background: white;
+  user-select: none;
+  white-space: nowrap;
+  transition: all .05s linear;
+  font-family: inherit;
   font-weight: 900;
-  font-size: 5rem;
-  transform: rotate(270deg);
 }
 
-/* Small devices (phones, 320px and up) */
-@media only screen and (max-width: 375px) {
-  .about-title {
-    font-size: 2rem;
+.contact:before, .contact:after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  transition: all .2s linear;
+ }
+
+ .contact:before {
+  width: calc(100% + 6px);
+  height: calc(100% - 16px);
+  top: 8px;
+  left: -3px;
+ }
+ 
+ .contact:after {
+  width: calc(100% - 16px);
+  height: calc(100% + 6px);
+  top: -3px;
+  left: 8px;
+ }
+ 
+ .contact:active {
+  transform: scale(0.95);
+ }
+ 
+ .contact:hover:before {
+  height: calc(100% - 50px);
+  top: 16px;
+ }
+ 
+ .contact:hover:after {
+  width: calc(100% - 32px);
+  left: 16px;
+ }
+
+ .contact span {
+  font-size: 15px;
+  z-index: 3;
+  position: relative;
+  font-weight: 600;
+ }
+
+ @media (max-width: 1200px) {
+  .Amain {
+    margin-left: 10em;
+    margin-right: 10em;
+  }
+  .contact {
+    height: 50px;
+    padding: 0 25px;
+    font-size: 1em;
   }
 
-  .text-container{
-    width: inherit;
-    gap: 1rem;
-  }
-
-  .eva{
-    display: none;
-  }
-
-  .text {
-    font-size: 0.6rem;
-    line-height: 1.5rem;
-  }
-
-  #a::first-letter {
-    font-size: 3.5vw;
-  }
-
-  .contact-btn {
-    font-size: 0.6rem;
-    padding: 0.5rem;
-    height: 2rem;
-  }
-
-  .skill-page{
-    height: 100vh;
-    width: 100vw;
-  }
-
-  .skill {
-    font-size: 1rem;
-    letter-spacing: 0.2rem  ;
-  }
-
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media only screen and (min-width: 376px) and (max-width: 768px) {
-  .about-title {
-    font-size: 2.2rem;
-  }
-
-  .text-container{
-    width: inherit;
-    gap: 1rem;
-    padding: 1rem;
-  }
-
-  .text {
-    font-size: 0.8rem;
-  }
-
-  #a::first-letter {
-    font-size: 3vw;
-  }
-
-  .eva{
-    display: none;
-  }
-
-  .contact-btn {
-    font-size: 0.6rem;
-  }
-
-  .skill-page{
-    height: 100vh;
-    width: inherit;
-  }
-
-  .skill {
-    font-size: 1.2rem;
-    letter-spacing: 0.2rem ;
-    padding-right: -1.2rem;
+  .contact span {
+    font-size: 1em;
   }
 }
 
-@media only screen and (min-width: 1024px){
-  .skill{
-    font-size: 3rem;
+@media (max-width: 992px) {
+  .Aheader {
+    font-size: 2em;
+  }
+  .Amain {
+    margin-left: 5em;
+    margin-right: 5em;
+    font-size: 1.2em;
+  }
+  .contact {
+    height: 45px;
+    padding: 0 20px;
+    font-size: 0.9em;
+  }
+  .contact span {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 768px) {
+  .Aheader {
+    font-size: 2em;
+  }
+  .Amain {
+    margin-left: 2em;
+    margin-right: 2em;
+    font-size: 1.1em;
+  }
+  .contact {
+    height: 40px;
+    padding: 0 15px;
+    font-size: 1em;
+  }
+
+  .contact span {
+    font-size: 0.85em;
+  }
+}
+
+@media (max-width: 576px) {
+  .Aheader {
+    font-size: 1.5em;
+  }
+  .Amain {
+    margin-left: 1em;
+    margin-right: 1em;
+    font-size: 0.7em;
+  }
+  .contact {
+    height: 35px;
+    padding: 0 10px;
+    font-size: 1em;
+  }
+
+  .contact span {
+    font-size: 0.8em;
   }
 }
