@@ -2,6 +2,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import '@/assets/styles/Navigation.css'
+import Link from 'next/link'
 
 export default function Navigation() {
   return (
@@ -13,16 +14,16 @@ export default function Navigation() {
     >
         <ul className='nav-list'>
           <li className='nav-item' >
-            <a href='/About'>ABOUT</a>
+            <Link href='/About'>ABOUT</Link>
           </li>
           <li className='nav-item' >
-            <a href='/Works'>WORKS</a>
+            <Link href='/Works'>WORKS</Link>
           </li>
           <li className='nav-item' >
-            <a href='/Resume'>RESUME</a>
+            <Link href='/Resume'>RESUME</Link>
           </li>
           <li className='nav-item' >
-            <a href='/Contact'>CONTACT</a>
+            <Link href='/Contact'>CONTACT</Link>
           </li>
         </ul>
     </motion.div>
