@@ -42,6 +42,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel='icon' href='./favicon.ico' />
+        <meta name="google-site-verification" content="kbIGtFg4O7wsl6Im-UEqRtiW0oSGeAe4HXUl6JczJa8" />
       </head>
       <body className={DrukWide.className}>
             <Header />
