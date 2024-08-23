@@ -47,7 +47,7 @@ export default function Footer() {
         </motion.div>
       </div>
       <div className='info'>
-        <div className='location'>Chennai, India</div>
+        <div className='location'>Gujarat, India</div>
         <a href='mailto:het36100@gmail.com'><div className='email'>het36100@gmail.com</div></a>
         <div className='cpyr'>© 2024 Het Gajera</div>
       </div>
