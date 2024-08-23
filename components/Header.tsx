@@ -4,27 +4,8 @@ import { motion } from 'framer-motion'
 import '@/assets/styles/Header.css'
 
 export default function Header() {
-
-  const variants = {
-    initial: (y: number) => {
-      return {
-        y: y
-      };
-    },
-    final: {
-      y: 0,
-      transition: {
-        duration: 0.7
-      }
-    }
-  };
-
   return (
-    <motion.header 
-    variants={variants}
-    custom={-200}
-    initial="initial"
-    animate="final">
+  <header >
     <div className='header-container'>
       <a href='/'>
         <div className='name'>
@@ -36,6 +17,6 @@ export default function Header() {
         Designer & Developer
       </div>
     </div>
-  </motion.header>
+  </header>
   )
 }
