@@ -10,11 +10,11 @@ const letterVariants = {
 };
 
 const projects = [
-  { year: 'TBA', title: 'TBN', link: 'https://github.com/het03' },
+  { year: '2024', title: 'PDF-CHAT', link: 'https://github.com/het03/Pdf-chat-app' },
+  { year: '2024', title: 'ECOM-ADMIN', link: 'https://github.com/het03/E-Commerce-Admin' },
   { year: '2024', title: 'PORTFOLIO', link: 'https://github.com/het03/Portfolio' },
-  { year: '2024', title: 'E-COMMERCE', link: 'https://github.com/het03/E-Commerce' },
+  { year: '2024', title: 'ECOM-STORE', link: 'https://github.com/het03/E-Commerce-Store' },
   { year: '2023', title: 'PLANTDEX', link: 'https://github.com/het03/plantDEX' },
-  { year: 'TBA', title: 'TBN', link: 'https://github.com/het03' },
 ];
 
 export default function Works() {
@@ -34,9 +34,7 @@ export default function Works() {
     <InitialPageTransition />
     {showContent && (
     <div className= "work-container"> 
-    <div className='work-heading'>
       <div className="work-title">WORKS</div>
-    </div>
       <AnimatePresence>
         <div className="work-list">
           {projects.map((project, index) => (
@@ -51,7 +49,7 @@ export default function Works() {
                   scale: 1.1
                 }}
                 className='project-card'
-              >
+                >
                 <a href={project.link} target='_blank' rel="noreferrer noopener">
                   <span className='year'>{project.year}</span>
                   {Array.from(project.title).map((char, charIndex) => (
@@ -62,7 +60,7 @@ export default function Works() {
                       initial="hidden"
                       animate="visible"
                       transition={{ delay: charIndex * 0.1 }}
-                    >
+                      >
                       {char}
                     </motion.div>
                   ))}
