@@ -4,28 +4,8 @@ import { motion } from 'framer-motion'
 import '@/assets/styles/Footer.css'
 
 export default function Footer() {
-
-  const variants = {
-    initial: (y: number) => {
-      return {
-        y: y
-      };
-    },
-    final: {
-      y: 0,
-      transition: {
-        duration: 0.7
-      }
-    }
-  };
-
   return (
-    <motion.footer
-    variants={variants}
-    custom={200}
-    initial="initial"
-    animate="final"
-    >
+    <footer>
       <div className='footer-container'>
         <motion.div
           whileHover={{ scale: 0.9 }}
@@ -51,6 +31,6 @@ export default function Footer() {
         <a href='mailto:het36100@gmail.com'><div className='email'>het36100@gmail.com</div></a>
         <div className='cpyr'>© 2024 Het Gajera</div>
       </div>
-    </motion.footer>
+    </footer>
   )
 }
